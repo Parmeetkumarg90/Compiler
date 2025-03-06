@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Code Compiler</h1>
+    </header>
+    <main>
+        <div id="selection">
+            <select name="select" id="select_element">
+                <option value="6">C</option>
+                <option value="7">C++</option>
+                <option value="4">Java</option>
+                <option value="5">Python</option>
+                <option value="17">JavaScript</option>
+            </select>
+            <button id="codeRunner">Run Code</button>
+        </div>
+        <div id="coding_section">
+            <div class="code">
+                <h2>Code Here!</h2>
+                <textarea type="text" id="user_code"></textarea>
+            </div>
+            <div class="code">
+                <h2>Code Result Here!</h2>
+                <textarea type="text" id="user_output" readonly></textarea>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>&#169;2025 - Reserved</h1>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>

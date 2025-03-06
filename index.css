@@ -1,0 +1,108 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.8vmax;
+    transition: all 0.2s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    background-color: #f4f4f9;
+}
+
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2.2% 0;
+}
+
+main {
+    width: 100%;
+    /* min-height: 40vmax; */
+    margin: 2% 0;
+    display: grid;
+    grid-template-rows: 0.4fr 2fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+#selection {
+    margin: 2.5% 0;
+    display: grid;
+    gap: 30%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#selection>#select_element,
+#selection>button {
+    text-align: center;
+    background-color: rgb(15, 10, 10);
+    color: #f4f4f9;
+    border: 2px solid #4CAF50;
+    padding: 5%;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+#selection>#select_element:hover,
+#selection>button:hover {
+    background-color: #f4f4f9;
+    color: #151516;
+}
+
+#coding_section {
+    width: 100%;
+    display: grid;
+    margin-top: 2.5%;
+    /* gap: 2%; */
+    /* place-items: center; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0fr;
+}
+
+#coding_section>.code>h2 {
+    text-align: center;
+    margin: 2.5% 0;
+}
+
+#coding_section>.code>textarea {
+    width: 95%;
+    margin-left: 2.5%;
+    height: fit-content;
+    min-height: 500px;
+    border: 0px;
+    resize: vertical;
+    box-shadow: 2px 2px 10px 2px rgb(39, 39, 39);
+}
+
+footer {
+    width: 100%;
+    padding: 2.2% 0;
+    color: #f4f4f9;
+    background-color: rgb(27, 23, 23);
+    text-align: center;
+    position: static;
+    bottom: 0;
+}
+
+@media (max-width:600px) {
+    #coding_section {
+        gap: 3%;
+        margin: 5% 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0fr;
+    }
+
+    #coding_section>.code>textarea {
+        min-height: 200px;
+    }
+}
